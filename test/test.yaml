@@ -1,0 +1,30 @@
+---  
+  files:
+    file_nginx:
+      filename: "nginx.conf"
+      permissions: 777
+      user: root
+      group: root
+      file_location: "/etc/nginx/sites-available/default"
+      link: "nginx"
+    file_php:
+      filename: "index.php"
+      permissions: 777
+      user: root
+      group: root
+      filelocation: "/var/www/html"
+      link: "php"
+  packages:
+    package_nginx:
+      packagename: nginx
+      action: install
+    package_php:
+      packagename: php
+      action: install
+  services:
+    service_nginx:
+      servicename: nginx
+      action: running
+    service_php:
+      servicename: php
+      action: running

@@ -1,0 +1,5 @@
+to do: 
+Check if a package is installed 
+once done reading composition from file, need Business logic to do the need full (test other functions)
+    test on docker container (file may be easiest)
+once test write start up script
